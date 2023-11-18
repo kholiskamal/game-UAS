@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* background-color: #f1f1f1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: absolute;
+  background: url("./bg.gif") top right no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+}
+body::after {
+  display: flex;
+  content: "\00A9  @kholis312 ";
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 11px;
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  z-index: 4;
+}
+
+h1 {
+  color: #b6f703;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  width: 500px;
+  padding: 20px;
+  background-color: rgb(16, 118, 214);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.garis-display {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.kholis-ganteng {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b6f703;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4caf50;
+}
+
+.pertanyaan-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #b6f703;
+}
